@@ -20,7 +20,6 @@ class ExampleWindow: NSWindow {
 
   override func awakeFromNib() {
     RegisterGeneratedPlugins(registry: flutterViewController)
-
     let assets = NSURL.fileURL(withPath: "flutter_assets", relativeTo: Bundle.main.resourceURL)
     var arguments: [String] = [];
     flutterViewController.launchEngine(
